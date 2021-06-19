@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="tailwind.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eRegistry </title>
+  <style>
+    :root{
+      --dis: block;
+    }
+    .sticky{
+      position: fixed;
+      top: 0;
+      background-color: white;
+    }
+    
+    ul.topnav li {float: left;}
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Top top information -->
+  <div class="w-full h-6 2xl:px-48" style="background-color: #059669;">
+    <div class="w-full h-6 lg:px-32 px-2 flex">
+      <p class="text-white text-sm w-full" style="text-align: end;">English</p>
+    </div>
+  </div>
+
+  <!-- Top Navigation bar -->
+  <div class="w-full h-14 lg:h-16 2xl:px-48 shadow-xl border-b border-gray-400" id="myHeader">
+    <div class="h-full px-2 lg:px-32 flex">
+      <!-- Wattle Tose_Sonke_logo -->
+      <a href="index.html" class="w-16 lg:w-32 py-1"><img src="images/eregLogo.png" alt="eRegistry_Logo"></a>
+      <div class="px-1 w-full">
+        <p class="py-0 lg:p-0 text-base md:text-base lg:text-lg xl:text-2xl font-semibold text-gray-800">eRegistry </p>
+        <p class="text-sm font-semibold" style="color: #059669;" >Travel around the world </p>
+      </div>
+      <div class="w-1/4 lg:w-full dropdown">
+        <a class="lg:hidden pt-4 font-semibold" style="float: right;">Menu</a>
+        <ul class="dropdown-content hidden lg:inline topnav list-none float-right text-sm xl:text-xl py-4 font-semibold text-gray-800">
+          <li class="pr-2 xl:pr-3 hover:text-yellow-500"><a style="color: #059669" href="#">Home</a></li>
+          <li class="pr-2 xl:pr-3 hover:text-yellow-500"><a href="index.html#packages">Apply</a></li>
+          <li class="pr-2 xl:pr-3 hover:text-yellow-500"><a href="index.html#services">Login</a></li>
+          <li class="hover:text-yellow-500"><a href="contactUs.html">Enquires</a></li>
+        </ul>      
+      </div>
+    </div>
+  </div>
+
+  <!-- Background image -->
+  <div class="w-full bg-teal-600" >
+    <div class="bg-cover bg-cener" id="bgimages" style="background-image: url(images/background.jpg);">
+      <div style="height: 100%;">
+        <div class="w-full 2xl:px-48 py-8 lg:py-40">
+          <div class="w-full px-2 lg:px-32 flex pt-64">
+            <div style="background: rgba(0, 0, 0, 0.5);" class="py-4 px-12 border-t-4 border-b-4 border-yellow-600">
+              <h2 class="text-lg xl:text-xl font-semibold text-white" id="packages">Welcome to eRegistry,</h2>
+              <h3 class="text-sm xl:text-xl font-semibold" style="color: #059669">Travel around the world </h3>
+              <button onclick="window.location.href='aboutUs.html';" class="text-sm xl:text-xl text-gray-100 font-semibold px-8 py-2 rounded-md mt-4" style="background-color: #059669">Enquire more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Package Section -->
+  <div class="w-full 2xl:px-48 py-12">
+    <h2 class="text-lg xl:text-2xl font-semibold text-gray-800" style="text-align: center;">Packages</h2>
+
+    <!-- Packages -->
+    <div class="w-4/5 lg:w-1/2 px-2 lg:px-32 pt-8 mr-auto ml-auto lg:flex">
+
+      <!-- Package -->
+      <div class="flex-1 rounded-2xl bg-gray-700 shadow-xl">
+        <div class="bg-cover bg-center w-full rounded-t-2xl bg-gray-300"> 
+          <h2 class="text-sm xl:text-xl font-semibold px-4 py-2" style="color: #059669;">Ordinary Passport</h2>
+        </div>
+        <div class="pt-8 pb-4 px-2">
+          <h2 class="text-sm xl:text-lg text-white">&#8226; Processing time: 6 months</h2>
+          <h2 class="text-sm xl:text-lg text-white" id="services">&#8226; Children: valid for 5 years</h2>
+          <h2 class="text-sm xl:text-lg text-white">&#8226; Adult: valid for 10 years</h2>
+
+          <h2 class="text-sm xl:text-lg font-semibold text-white pl-24 pr-4 pt-8">US$60.00</h2>
+        </div>
+      </div>
+
+      <!-- Package -->
+      <div class=" flex-1 rounded-2xl lg:ml-12 mt-8 lg:mt-0 bg-gray-700 shadow-xl">
+        <div class="bg-cover bg-center w-full rounded-t-2xl bg-gray-300"> 
+          <h2 class="text-sm xl:text-xl font-semibold px-4 py-2" style="color: #059669;">3 day Passport</h2>
+        </div>
+        <div class="pt-8 pb-4 px-2">
+          <h2 class="text-sm xl:text-lg text-white">&#8226; Processing time: 3 days</h2>
+          <h2 class="text-sm xl:text-lg text-white">&#8226; Children: valid for 5 years</h2>
+          <h2 class="text-sm xl:text-lg text-white">&#8226; Adult: valid for 10 years</h2>
+
+          <h2 class="text-sm xl:text-lg font-semibold text-white pl-24 pr-4 pt-8">US$200.00</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Packages -->
+    <div class="w-4/5 lg:w-1/2 px-2 lg:px-32 pt-8 mr-auto ml-auto lg:flex">
+
+      <!-- Package -->
+      <div class="flex-1 rounded-2xl bg-gray-700 shadow-xl">
+        <div class="bg-cover bg-center w-full rounded-t-2xl bg-gray-300"> 
+          <h2 class="text-sm xl:text-xl font-semibold px-4 py-2" style="color: #059669;">Emergency Passport</h2>
+        </div>
+        <div class="pt-8 pb-4 px-2">
+          <h2 class="text-sm xl:text-lg text-white">&#8226; Processing time: 24 hours</h2>
+          <h2 class="text-sm xl:text-lg text-white" id="services">&#8226; Children: valid for 5 years</h2>
+          <h2 class="text-sm xl:text-lg text-white">&#8226; Adult: valid for 10 years</h2>
+
+          <h2 class="text-sm xl:text-lg font-semibold text-white pl-24 pr-4 pt-8">US$318.00</h2>
+        </div>
+      </div>
+
+      <!-- Package -->
+      <div class=" flex-1 rounded-2xl lg:ml-12 mt-8 lg:mt-0 bg-gray-700 shadow-xl">
+        <div class="bg-cover bg-center w-full rounded-t-2xl bg-gray-300"> 
+          <h2 class="text-sm xl:text-xl font-semibold px-4 py-2" style="color: #059669;">ETD</h2>
+        </div>
+        <div class="pt-8 pb-4 px-2">
+          <h2 class="text-sm xl:text-lg text-white">&#8226; Processing time: 24 hours</h2>
+          <h2 class="text-sm xl:text-lg text-white">&#8226; Children: valid for 6 months</h2>
+          <h2 class="text-sm xl:text-lg text-white">&#8226; Adult: valid for 6 months</h2>
+
+          <h2 class="text-sm xl:text-lg font-semibold text-white pl-24 pr-4 pt-8">US$80.00</h2>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Banner -->
+  <div class="w-full py-8" style="background-color: #059669;">
+    <h2 class="text-lg lg:text-2xl font-semibold text-white mb-8" style="text-align: center;">Book your passport or ETD now and Travel around the world</h2>
+
+    <div class="flex mb-4" style="text-align: center;">
+      <button onclick="window.location.href='aboutUs.html';" class="text-sm xl:text-xl text-green-600 font-semibold px-8 py-2 mt-4 inline-block bg-white rounded-full mr-auto ml-auto" >Apply now</button>
+    </div>
+    
+  </div>
+
+  <!-- Footer here -->
+  <div class="w-full 2xl:px-48 my-12">
+    <div class="w-full lg:px-32 px-2 lg:flex">
+
+      <!-- About us -->
+     <div class=" flex-1">
+      <h2 class="text-md xl:text-lg text-gray-800 font-semibold" >Check progress </h2>
+      <p class="text-sm xl:text-md py-4 text-gray-700">eRegistry allows you to  <u><a href="aboutUs.html" class="text-blue-600">apply</a></u>
+        and check progress of your travelling documents <u><a href="aboutUs.html" class="text-blue-600">login</a></u>
+      </p>
+     </div>
+
+     <!-- Quick links -->
+     <div class="flex-1 lg:mx-12">
+      <h2 class="text-md xl:text-lg text-gray-800 font-semibold" > Quick links </h2>
+      <ul class="font-semibold text-sm xl:text-md text-gray-700 py-4">
+        <li class="pb-3"> <a href="#" style="color: #059669;"> Home </a></li>
+        <li class="pb-3"> <a href="Services.html"> Apply now </a></li>
+        <li class="pb-3"> <a href="aboutUs.html"> Login </a></li>
+        <li class="pb-3"> <a href="contactUs.html"> Enquires </a></li>
+      </ul>
+    </div>
+
+    <!-- Conatct us -->
+    <div class="flex-1">
+      <h2 class="text-md xl:text-lg text-gray-800 font-semibold" > Get in touch with us </h2>
+      <div class="py-4">
+        <!-- Phone details -->
+        <div class="pb-4 text-sm xl:text-md inline-block">
+          <h2 style="color: #059669;"> <b class="font-semibold">Landline:</b> <b class="font-normal text-gray-800">0242-253-386</b></h2>
+        </div><br>
+        <!-- WhatsApp / Mobile -->
+        <div class="pb-4 text-sm xl:text-md inline-block">
+          <h2 style="color: #059669;"> <b class="font-semibold">WhatsApp / Mobile:</b> <b class="font-normal text-gray-800">0785313872</b></h2>
+        </div>
+        <!-- Email -->
+        <div class="pb-4 text-sm xl:text-md inline-block">
+          <h2 style="color: #059669;"> <b class="font-semibold">Email:</b> <b class="font-normal text-gray-800">enquires@eRegistry.co.zw</b></h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick links -->
+    <div class="flex-1 lg:mx-12">
+      <h2 class="text-md xl:text-lg text-gray-800 font-semibold" > Find us</h2>
+      <div class="py-4 text-sm xl:text-md">
+        <h2 class="font-semibold" style="color: #059669;"> Physical Address: </h2>
+        <address class="text-gray-700">
+          eRegistry  <br>
+          3rd Floor Green Bridge South <br>
+          Eastgate <br>
+          Harare, Zimbabwe <br>
+        </address>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- Copyright section -->
+  <div class="w-full h-6 2xl:px-48" style="background-color: #059669;">
+    <div class="w-full h-6 lg:px-32 px-2 flex">
+      <p class="text-white w-full " style="font-size: 12px;">Quality policy </p>
+      <p class="text-white text-sm" style="text-align: end; white-space: nowrap;font-size: 12px">Copyright &copy; 2021 | All rights reserved.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script>
+    //sticky header
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+
+    function hello(){
+      var r = document.querySelector(':root');
+      r.style.setProperty('--dis', 'none');
+    }
+
+  </script>
+</body>
+</html>
